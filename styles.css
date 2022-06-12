@@ -29,6 +29,9 @@ h1 {
     width: 100%;
     height: 400px;
     margin: 2rem;
+    overflow: hidden;
+    cursor: grab;
+    /* border-top: 10px solid red; */
 }
 
 .cards {
@@ -38,6 +41,8 @@ h1 {
     display: grid;
     grid-template-columns: repeat(7, 300px);
     grid-gap: 50px;
+    pointer-events: none;
+    /* border-bottom: 10px solid blue; */
 }
 
 .card {
