@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Global */
+
+img {
+    width: 100%;
+}
+
+h1 {
+    margin: 0.5rem 0;
+}
+
+/* Container and Cards */
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 2rem;
+}
+
+.cards {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 300px);
+    grid-gap: 50px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card-content {
+    color: #4e4e4e;
+    padding: 1rem;
+}
